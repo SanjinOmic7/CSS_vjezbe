@@ -1,0 +1,19 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #cfcece;   
+}
+
+body {
+
+    background: url(../../../images/fire.png) center center/400px no-repeat,
+    url(../../../images/pattern.png)center center,
+    url(../../../images/blossom.jpg) center center/cover no-repeat;
+}
+
+h1 {
+    background-color: #333;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
