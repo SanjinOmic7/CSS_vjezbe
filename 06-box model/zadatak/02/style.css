@@ -4,19 +4,35 @@ body {
     color: #333;
 }
 
-.div1 {
-    width:400px;
+
+#maindiv {
+    background-color: grey;
+    width: 400px;
     height: 400px;
-    border: solid #333;
-    margin: 100px 0px 0px 100px;
-    padding: 50px 0px 0px 0px;
-    border-left: #333;
+    /* text-align:justify; */
+    background-color: rgb(207, 240, 251);
+    margin: 20px auto;
+    border: 6px solid #333;
+    /* display: flexbox; */
+   
+}
+
+.div1 {
+    background-color: red;
+    /* margin: 0px;
+    padding: 0px; */
+    width: 200px;
+    height: 200px;
+    
 }
 
 .div2 {
-    width: 400px;
-    height: 400px;
-    border: solid #333;
-    margin: 100px 0px 0px 100px;
+    background-color: blue;
+    /* margin: 0px 0px 200px 200px; */
+    /* padding: 0px; */
+    margin-left: 200px;
+    width: 200px;
+    height: 200px;
     
+
 }
