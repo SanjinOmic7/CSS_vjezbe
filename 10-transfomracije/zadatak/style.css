@@ -25,6 +25,7 @@
     height: 150px;
     margin: 4em auto;
     text-align:center;
+    box-sizing: border-box;
   }
 
  div:nth-child(4) {
