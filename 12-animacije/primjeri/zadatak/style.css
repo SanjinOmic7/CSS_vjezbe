@@ -31,10 +31,19 @@ h1 {
 }
 
 div:nth-of-type(1) {
-    animation: animacija1 2s infinite alternate;
+    animation: animacija1 2s infinite;
 }
 
 @keyframes animacija1 {
+    100% {
+        transform: scale(1);
+        background-color: #f93;
+    }
+
+    50% {
+        transform: scale(1.2);
+        background-color: red;
+    }
     
 }
 
@@ -57,7 +66,7 @@ div:nth-of-type(3) {
 }
 
 @keyframes animacija3 {
-    0%, 100% {
+    100% {
         transform: rotate(0deg);
         border-radius: 50%;
     }
@@ -72,7 +81,7 @@ div:nth-of-type(4) {
 }
 
 @keyframes animacija4 {
-    0%, 100% {
+    100% {
         transform: translateY(0);
     }
     50% {
@@ -105,7 +114,7 @@ div:nth-of-type(6) {
 }
 
 @keyframes animacija6 {
-    0%, 100% {
+    100% {
         transform: scale(1.5);
     }
     50% {
