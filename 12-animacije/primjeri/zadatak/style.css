@@ -30,20 +30,21 @@ h1 {
     text-align: center;
 }
 
-div:nth-last-of-type(1) {
-    animation: beat 3s infinite;
+div:nth-of-type(1) {
+    animation: animacija1 2s infinite alternate;
 }
 
-@keyframes beat {
-
+@keyframes animacija1 {
+    
 }
+
 
 div:nth-of-type(2) {
-    animation: moveAndRotate 3s infinite alternate;
+    animation: animacija2 3s infinite alternate;
 }
 
-@keyframes moveAndRotate {
-    0%, 100% {
+@keyframes animacija2 {
+    100% {
         transform: translateY(0) rotate(0deg);
     }
     50% {
@@ -52,10 +53,10 @@ div:nth-of-type(2) {
 }
 
 div:nth-of-type(3) {
-    animation: rotateToSquare 3s linear infinite alternate;
+    animation: animacija3 3s linear infinite alternate;
 }
 
-@keyframes rotateToSquare {
+@keyframes animacija3 {
     0%, 100% {
         transform: rotate(0deg);
         border-radius: 50%;
@@ -67,10 +68,10 @@ div:nth-of-type(3) {
 }
 
 div:nth-of-type(4) {
-    animation: bounce 0.5s infinite;
+    animation: animacija4 0.5s infinite;
 }
 
-@keyframes bounce {
+@keyframes animacija4 {
     0%, 100% {
         transform: translateY(0);
     }
@@ -80,36 +81,30 @@ div:nth-of-type(4) {
 }
 
 div:nth-of-type(5) {
-    animation: dropRotate 5s infinite alternate, colorChange 2s infinite alternate;
+    animation: animacija5 5s infinite alternate;
 }
 
-@keyframes dropRotate {
+@keyframes animacija5 {
     0% {
         transform: translateY(0) rotate(0deg);
-    }
-    50% {
-        transform: translateY(75vh) rotate(180deg);
-    }
-    100% {
-        transform: translateY(0) rotate(0deg);
-    }
-}
-
-@keyframes colorChange {
-    0%, 100% {
         background-color: #f93;
     }
     50% {
+        transform: translateY(75vh) rotate(180deg);
         background-color: red;
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+        background-color: #f93;
     }
 }
 
 
 div:nth-of-type(6) {
-    animation: pulseOnce 1s alternate;
+    animation: animacija6 1s alternate;
 }
 
-@keyframes pulseOnce {
+@keyframes animacija6 {
     0%, 100% {
         transform: scale(1.5);
     }
