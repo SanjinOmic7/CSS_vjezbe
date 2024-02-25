@@ -1,0 +1,73 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+  
+.wrapper {
+    text-align: center;
+}
+
+  
+.wrapper div {
+    background-color: blue;
+    border: 8px solid red;
+    border-radius: 100%;
+    display: inline-block;
+    font-size: 2em;
+    line-height: 90px;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    text-align: center;
+    opacity: 0;
+
+}
+
+.wrapper div:nth-child(1) {
+    animation: appearfrombottom 2s 0.5s forwards;
+}
+
+.wrapper div:nth-child(2) {
+    animation: appearfrombottom 2s 1s forwards;
+}
+
+.wrapper div:nth-child(3) {
+    animation: appearfrombottom 2s 1.5s forwards;
+}
+
+.wrapper div:nth-child(4) {
+    animation: appearfrombottom 2s 2s forwards;
+}
+
+.wrapper div:nth-child(5) {
+    animation: appearfrombottom 2s 2.5s forwards;
+}
+
+.wrapper div:nth-child(6) {
+    animation: appearfrombottom 2s 3s forwards;
+}
+
+.wrapper div:nth-child(7) {
+    animation: appearfrombottom 2s 3.5s forwards;
+}
+
+@keyframes appearfrombottom {
+    from {
+        transform: translateY(80vh);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
