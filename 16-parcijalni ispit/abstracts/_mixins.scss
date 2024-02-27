@@ -1,0 +1,12 @@
+@mixin drop_animation {
+    @keyframes drop {
+        0% {
+          transform: translateY(-90vh);
+          
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    }
+    

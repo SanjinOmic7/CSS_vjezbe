@@ -1,0 +1,47 @@
+@import "mixins";
+
+.wrapper {
+    flex-direction: row;
+    margin: 1vh 50vh;
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper {
+    div {
+        
+        transform: translate(0, -90vh);
+        color: $color1;
+        width: 150vw;
+        height: 15vh;
+        margin: 15%;
+        padding: 6%;
+        border: 4px groove $color1;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        animation: drop 1.5s ease-in-out forwards;
+    }
+    
+}
+
+.c {
+    @include drop_animation;
+    background-color: $color2;
+    animation-delay: 0s;
+}
+
+div:nth-child(2) {
+    @include drop_animation;
+    background-color: $color3;
+    animation-delay: 1.5s;
+}
+div:last-child {
+    @include drop_animation;
+    background-color: $color4;
+    animation-delay: 3s;
+}
